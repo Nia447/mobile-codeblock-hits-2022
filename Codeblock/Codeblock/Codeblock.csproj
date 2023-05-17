@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="NewFolder\**" />
+    <Compile Remove="ViewModel\NewFolder1\**" />
+    <Compile Remove="ViewModel\NewFolder2\**" />
+    <Compile Remove="ViewModel\UnitsView\ArrayBlockFolder\**" />
+    <Compile Remove="ViewModel\UnitsView\CycleBlockFolder\**" />
+    <Compile Remove="ViewModel\UnitsView\FunctionBlockFolder\**" />
+    <Compile Remove="ViewModel\UnitsView\LogicBlockFolder\**" />
+    <EmbeddedResource Remove="NewFolder\**" />
+    <EmbeddedResource Remove="ViewModel\NewFolder1\**" />
+    <EmbeddedResource Remove="ViewModel\NewFolder2\**" />
+    <EmbeddedResource Remove="ViewModel\UnitsView\ArrayBlockFolder\**" />
+    <EmbeddedResource Remove="ViewModel\UnitsView\CycleBlockFolder\**" />
+    <EmbeddedResource Remove="ViewModel\UnitsView\FunctionBlockFolder\**" />
+    <EmbeddedResource Remove="ViewModel\UnitsView\LogicBlockFolder\**" />
+    <None Remove="NewFolder\**" />
+    <None Remove="ViewModel\NewFolder1\**" />
+    <None Remove="ViewModel\NewFolder2\**" />
+    <None Remove="ViewModel\UnitsView\ArrayBlockFolder\**" />
+    <None Remove="ViewModel\UnitsView\CycleBlockFolder\**" />
+    <None Remove="ViewModel\UnitsView\FunctionBlockFolder\**" />
+    <None Remove="ViewModel\UnitsView\LogicBlockFolder\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Assignment\" />
+  </ItemGroup>
+</Project>
